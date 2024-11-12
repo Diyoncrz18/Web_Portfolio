@@ -1,11 +1,17 @@
-import logo from './logo.svg';
-import './assets/css/header.css'
-import Header from './components/header';
+import "./assets/css/style.css";
+import Link from "./components/link";
+import Header from "./components/header";
+import Home from "./components/home";
+
 
 const App = () => {
   return (
-    <Header/>
-  )
-}
+    <>
+      <Link/>
+      <Header />
+      <Home />
+    </>
+  );
+};
 
 export default App;

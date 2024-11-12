@@ -1,8 +1,10 @@
 const Header = () => {
-   return (
-      <header className="header" id="header">
+  return (
+    <header className="header" id="header">
       <nav className="nav container">
-        <a href="#" className="nav__logo">Dion</a>
+        <a href="#" className="nav__logo">
+          Diyon
+        </a>
         <div className="nav__menu" id="nav-menu">
           <ul className="nav__list">
             <li className="nav__item">
@@ -24,23 +26,22 @@ const Header = () => {
               </a>
             </li>
             <li className="nav__item">
+              <a href="#certificate" className="nav__link">
+                <i className="bx bx-certification nav__icon" />
+                <span className="nav__name">Certificates</span>
+              </a>
+            </li>
+            <li className="nav__item">
               <a href="#contact" className="nav__link">
                 <i className="bx bx-message-square-detail nav__icon" />
                 <span className="nav__name">Contact</span>
               </a>
             </li>
-            <li className="nav__item">
-              <a href="/login/index.html" className="nav__link">
-                <i className="bx bx-log-in nav__icon" />
-                <span className="nav__name">Login</span>
-              </a>
-            </li>
           </ul>
         </div>
-        <i className="bx bx-moon change-theme" id="theme-button" />
       </nav>
     </header>
-   )
-}
+  );
+};
 
-export default Header
+export default Header;
