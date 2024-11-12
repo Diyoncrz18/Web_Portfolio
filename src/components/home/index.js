@@ -1,23 +1,35 @@
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
 const Home = () => {
+  const [home, setHome] = useState({});
+  useEffect(() => {
+    const db = getDatabase();
+    const homeRef = ref(db, "home/");
+    onValue(homeRef, (snapshot) => {
+      const data = snapshot.val();
+      setHome(data);
+    });
+  }, []);
   return (
     <section className="home section" id="home">
       <div className="home__container container grid">
         <div className="home__data">
-          <span className="home__greeting">Hello, I'm</span>
-          <h1 className="home__name">Dion Kobi</h1>
-          <h3 className="home__institution">Student of Universitas Klabat</h3>
+          <span className="home__greeting">{home.hello}</span>
+          <h1 className="home__name">{home.name}</h1>
+          <h3 className="home__institution">{home.institusi}</h3>
           <div className="home__buttons">
             <a href="#" target="_blank" className="button button--ghost">
-              DOWNLOAD CV
+              {home.download_cv}
             </a>
             <a href="#about" className="button">
-              About me
+              {home.about_me}
             </a>
           </div>
         </div>
         <div className="home__handle">
           <img
-            src="images/dion-img-removebg-preview.png"
+            src={home.images}
             alt
             className="home__img"
           />
@@ -47,7 +59,7 @@ const Home = () => {
         </div>
         <a href="#about" className="home__scroll">
           <i className="bx bxs-mouse home__scroll-icon" />
-          <span className="home__scroll-name">Scroll Down</span>
+          <span className="home__scroll-name">{home.scrol_down}</span>
         </a>
       </div>
     </section>
