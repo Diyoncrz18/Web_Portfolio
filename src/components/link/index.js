@@ -12,7 +12,6 @@ const Link = () => {
         href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
         rel="stylesheet"
       />
-      <link rel="stylesheet" href="assets/css/styles.css" />
       <title>Personal Portfolio</title>   
     </div>
   );
