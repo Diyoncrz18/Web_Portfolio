@@ -13,12 +13,12 @@ const Skill = () => {
   }, []);
   return (
     <section className="skills section" id="skills">
-      <span className="section__subtitle">My abilities</span>
-      <h2 className="section__title">SKILLS</h2>
+      <span className="section__subtitle">{skill.abilities}</span>
+      <h2 className="section__title">{skill.skills}</h2>
       <div className="skills__container container grid">
         {/* Programing Language */}
         <div className="skills__content">
-          <h3 className="skills__title">Programming Language</h3>
+          <h3 className="skills__title">{skill.programing}</h3>
           <div className="skills__box">
             <div className="skills__group">
               <div className="skills__data">
@@ -59,7 +59,7 @@ const Skill = () => {
         </div>
         {/* Framework */}
         <div className="skills__content">
-          <h3 className="skills__title">Framework / IDE</h3>
+          <h3 className="skills__title">{skill.fremwork}</h3>
           <div className="skills__box">
             <div className="skills__group">
               <div className="skills__data">
