@@ -1,6 +1,4 @@
-// src/components/loading.js
 import React from "react";
-import "./style.css"
 
 const Loading = () => {
   return (

@@ -214,6 +214,8 @@ body.light-theme {
 .nav__logo {
   color: var(--title-color);
   font-weight: var(--font-semibold);
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (max-width: 767px) {
@@ -677,6 +679,75 @@ body.light-theme {
   background-color: hsl(var(--second-hue), 8%, 20%);
 }
 
+/* Loading pages */
+.loader{
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+}
+.loader span{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: rgba(255, 255, 255, .1);
+  display: inline-block;
+  transition: all .5s;
+  animation: animate 2s infinite;
+}
+.loader span:nth-child(1){
+  animation-delay: .1s;
+
+}
+.loader span:nth-child(2){
+  animation-delay: .2s;
+  
+}
+.loader span:nth-child(3){
+  animation-delay: .1s;
+  
+}
+.loader span:nth-child(1){
+  animation-delay: .3s;
+  
+}
+.loader span:nth-child(4){
+  animation-delay: .4s;
+  
+}
+.loader span:nth-child(5){
+  animation-delay: .5s;
+  
+}
+.loader span:nth-child(6){
+  animation-delay: .6s;
+  
+}
+.loader span:nth-child(7){
+  animation-delay: .7s;
+  
+}
+@keyframes animate{
+  0%{
+      color:rgba(255, 255, 255, .1);
+      transform: translateY(0);
+      margin-left: 0;
+  }
+  25%{
+      color:yellow;
+      transform: translateY(-15px);
+      margin-left: 10px;
+      text-shadow: 0 15px 5px rgba(0, 0, 0, 1);
+  }
+  100%{
+      color:rgba(255, 255, 255, .1);
+      transform: translateY(0);
+      
+  }
+}
+
+
 /*=============== MEDIA QUERIES ===============*/
 @media screen and (min-width: 576px) {
   .nav__list {
@@ -747,24 +818,12 @@ body.light-theme {
   }
   .nav__name {
     font-size: var(--normal-font-size);
-    display: block; /* Minimalist design, visible labels */
+    display: block;
   }
   .nav__link:hover {
     color: var(--first-color);
   }
 
-  /* First design, remove if you choose the minimalist design */
-  /* .active-link::before {
-    content: "";
-    position: absolute;
-    bottom: -0.75rem;
-    width: 4px;
-    height: 4px;
-    background-color: var(--first-color);
-    border-radius: 50%;
-  } */
-
-  /* Minimalist design */
   .active-link::before {
     bottom: -0.75rem;
   }
@@ -879,28 +938,4 @@ body.light-theme {
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-
-/* src/components/loading.css */
-.loading-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-}
-
-.spinner {
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #3498db;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
 }
