@@ -16,7 +16,7 @@ const About = () => {
       <span className="section__subtitle">{about.intro}</span>
       <h2 className="section__title">{about.about_me}</h2>
       <div className="about__container container grid">
-        <img src={about.images} alt className="about__img" />
+        <img src={about.images} alt="" className="about__img" />
         <div className="about__data">
           <p className="about__description">{about.description}</p>
           <a href="#contact" className="button">

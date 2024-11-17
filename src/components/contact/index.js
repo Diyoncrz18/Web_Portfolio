@@ -23,12 +23,11 @@ const Contact = () => {
             <div className="contact__card">
               <i className="bx bx-mail-send contact__card-icon" />
               <h3 className="contact__card-title">{contact.email}</h3>
-              <span className="contact__card-data">
-                {contact.student}
-              </span>
+              <span className="contact__card-data">{contact.student}</span>
               <a
                 href="mailto:s22310160@student.unklab.ac.id"
                 target="_blank"
+                rel="noreferrer"
                 className="contact__button"
               >
                 {contact.write}
@@ -43,6 +42,7 @@ const Contact = () => {
               <a
                 href="https://wa.me/6281344155598"
                 target="_blank"
+                rel="noreferrer"
                 className="contact__button"
               >
                 {contact.write}
@@ -57,6 +57,7 @@ const Contact = () => {
               <a
                 href="https://instagram.com/diyoncrz_"
                 target="_blank"
+                rel="noreferrer"
                 className="contact__button"
               >
                 {contact.write}

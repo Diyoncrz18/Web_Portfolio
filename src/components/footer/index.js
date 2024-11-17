@@ -26,6 +26,7 @@ const Footer = () => {
           <a
             href="https://www.linkedin.com/in/dion-kobi-b1186b312/"
             target="_blank"
+            rel="noreferrer"
             className="footer__social-link"
           >
             <i className="bx bxl-linkedin" />
@@ -33,6 +34,7 @@ const Footer = () => {
           <a
             href="https://www.instagram.com/diyoncrz_/"
             target="_blank"
+            rel="noreferrer"
             className="footer__social-link"
           >
             <i className="bx bxl-instagram" />
@@ -40,6 +42,7 @@ const Footer = () => {
           <a
             href="https://github.com/Diyoncrz18"
             target="_blank"
+            rel="noreferrer"
             className="footer__social-link"
           >
             <i className="bx bxl-github" />

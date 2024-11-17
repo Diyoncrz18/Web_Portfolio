@@ -15,23 +15,14 @@ const Certificate = () => {
     <section className="work section" id="certificate">
       <h2 className="section__title">{certificate.text}</h2>
       <div className="certificate__container bd-grid">
-        <a
-          href={certificate.img1}
-          className="certificate__img"
-        >
-          <img src={certificate.img1} alt />
+        <a href={certificate.img1} className="certificate__img">
+          <img src={certificate.img1} alt="" />
         </a>
-        <a
-          href={certificate.img2}
-          className="certificate__img"
-        >
-          <img src={certificate.img2} alt />
+        <a href={certificate.img2} className="certificate__img">
+          <img src={certificate.img2} alt="" />
         </a>
-        <a
-          href={certificate.img3}
-          className="certificate__img"
-        >
-          <img src={certificate.img3} alt />
+        <a href={certificate.img3} className="certificate__img">
+          <img src={certificate.img3} alt="" />
         </a>
       </div>
     </section>

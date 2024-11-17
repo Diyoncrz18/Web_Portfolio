@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="header" id="header">
       <nav className="nav container">
-      <img src={header.logo} className="nav__logo" alt=""/>
+        <img src={header.logo} className="nav__logo" alt="" />
         <div className="nav__menu" id="nav-menu">
           <ul className="nav__list">
             <li className="nav__item">

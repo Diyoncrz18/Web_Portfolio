@@ -24,13 +24,13 @@ const Skill = () => {
               <div className="skills__data">
                 <i className="bx bx-badge-check" />
                 <div>
-                  <img src={skill.html} alt className="skills__name" />
+                  <img src={skill.html} alt="" className="skills__name" />
                 </div>
               </div>
               <div className="skills__data">
                 <i className="bx bx-badge-check" />
                 <div>
-                  <img src={skill.css} alt className="skills__name" />
+                  <img src={skill.css} alt="" className="skills__name" />
                 </div>
               </div>
             </div>
@@ -38,20 +38,13 @@ const Skill = () => {
               <div className="skills__data">
                 <i className="bx bx-badge-check" />
                 <div>
-                  <img
-                    src={skill.js}
-                    className="skills__name"
-                  />
+                  <img src={skill.js} alt="" className="skills__name" />
                 </div>
               </div>
               <div className="skills__data">
                 <i className="bx bx-badge-check" />
                 <div>
-                  <img
-                    src={skill.python}
-                    alt
-                    className="skills__name"
-                  />
+                  <img src={skill.python} alt="" className="skills__name" />
                 </div>
               </div>
             </div>
@@ -65,31 +58,19 @@ const Skill = () => {
               <div className="skills__data">
                 <i className="bx bx-badge-check" />
                 <div>
-                  <img
-                    src={skill.bootstrap}
-                    alt
-                    className="skills__name"
-                  />
+                  <img src={skill.bootstrap} alt="" className="skills__name" />
                 </div>
               </div>
               <div className="skills__data">
                 <i className="bx bx-badge-check" />
                 <div>
-                  <img
-                    src={skill.react}
-                    alt
-                    className="skills__name"
-                  />
+                  <img src={skill.react} alt="" className="skills__name" />
                 </div>
               </div>
               <div className="skills__data">
                 <i className="bx bx-badge-check" />
                 <div>
-                  <img
-                    src={skill.mysql}
-                    alt
-                    className="skills__name"
-                  />
+                  <img src={skill.mysql} alt="" className="skills__name" />
                 </div>
               </div>
             </div>
@@ -97,31 +78,19 @@ const Skill = () => {
               <div className="skills__data">
                 <i className="bx bx-badge-check" />
                 <div>
-                  <img
-                    src={skill.tailwind}
-                    alt
-                    className="skills__name"
-                  />
+                  <img src={skill.tailwind} alt="" className="skills__name" />
                 </div>
               </div>
               <div className="skills__data">
                 <i className="bx bx-badge-check" />
                 <div>
-                  <img
-                    src={skill.nodejs}
-                    alt
-                    className="skills__name"
-                  />
+                  <img src={skill.nodejs} alt="" className="skills__name" />
                 </div>
               </div>
               <div className="skills__data">
                 <i className="bx bx-badge-check" />
                 <div>
-                  <img
-                    src={skill.postman}
-                    alt
-                    className="skills__name"
-                  />
+                  <img src={skill.postman} alt="" className="skills__name" />
                 </div>
               </div>
             </div>
