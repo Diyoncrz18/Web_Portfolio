@@ -21,6 +21,12 @@ const Certificate = () => {
         <a href={certificate.img2} className="certificate__img">
           <img src={certificate.img2} alt="" />
         </a>
+        <a href={certificate.img5} className="certificate__img">
+          <img src={certificate.img5} alt="" />
+        </a>
+        <a href={certificate.img4} className="certificate__img">
+          <img src={certificate.img4} alt="" />
+        </a>
         <a href={certificate.img3} className="certificate__img">
           <img src={certificate.img3} alt="" />
         </a>
