@@ -30,6 +30,9 @@ const Certificate = () => {
         <a href={certificate.img3} className="certificate__img">
           <img src={certificate.img3} alt="" />
         </a>
+        <a href={certificate.img6} className="certificate__img">
+          <img src={certificate.img6} alt="" />
+        </a>
       </div>
     </section>
   );
